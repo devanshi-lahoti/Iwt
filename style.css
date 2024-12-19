@@ -1,0 +1,217 @@
+#headerdiv {
+    background-image: url("header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between Travel and Explore */
+    padding: 0 20px; /* Add padding around the edges */
+}
+
+#index{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+#explore {
+    text-decoration: none;
+    
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 90px;
+}
+#register{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 250px;
+}
+#index:hover,
+#explore:hover,#register:hover {
+    color: rgb(250, 234, 50); /* Add hover effect */
+}
+
+nav {
+    display: flex; /* Use Flexbox for items inside the nav */
+    justify-content: space-between; /* Distribute Travel and Explore */
+    width: 100%; /* Make the nav take up the full width */
+}
+
+nav h1 {
+    margin: 0; /* Remove default margins for h1 */
+}
+
+nav h1:first-child {
+    margin-right: auto; /* Push "Explore" to the far right */
+}
+
+body,header{
+margin: 0px;
+padding: 0px;
+margin-top: 0px;
+padding-top: 0px;
+
+}
+*{
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.img-cont-box{
+    display: flex;
+    flex-direction: row;
+    gap : 120px;
+    
+}
+#travimg {
+    height: 600px;          /* Fixed height for the container */
+    width: 470px;           /* Fixed width for the container */
+    position: relative;     /* Necessary for positioning child elements */
+    overflow: hidden;       /* Ensures content outside the container is hidden */   
+ }
+
+.slide {
+    position: absolute;     /* Allows stacking of slides on top of each other */
+    width: 100%;            /* Matches the container's width */
+    height: 100%;           /* Matches the container's height */
+    object-fit: cover;      /* Ensures the image covers the entire container */
+    opacity: 0;             /* Hidden by default */
+    transition: opacity 1s ease-in-out; /* Smooth transition for image visibility */
+}
+
+.slide.active {
+    opacity: 1;             /* Display the active slide */
+    z-index: 1;             /* Ensure it appears on top of other slides */
+}
+
+.overlay-text {
+    position:absolute;         /* Positioned relative to the container */
+    top: 10%;                   /* Vertically centered */
+    left: 50%;                  /* Horizontally centered */
+    transform: translate(-50%, -50%); /* True centering using transform */
+    color: rgb(255, 255, 255);               /* Text color */
+    font-size: 45px;            /* Font size */
+    font-weight: bold;          /* Bold font */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Shadow for readability */
+    /* background-color:beige; Semi-transparent background for text */
+     padding: 1px 2px;         
+    border-radius: 5px;         /* Rounded corners for the text background */
+    z-index: 2;                 /* Ensure text is above the image */
+    text-align: center;         /* Center-align the text */
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: transform 0.5s ease, opacity 1s ease-in-out;
+    }
+    #title h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0; /* Reset margins for h1 */
+        color: rgb(58, 58, 183);
+    }
+    
+    #title h1 span {
+        color: rgb(27, 143, 52);
+        font-size: 60px;
+    }
+    
+    #title h2 {
+        margin-top: 25px;
+        padding-left: 7px;
+        font-size: 30px; /* Adjusted font size for clarity */
+        color: black; /* Optional: change color for distinction */
+    }
+    
+    #title p {
+        margin-top: 2px; /* Adds spacing below h2 */
+        line-height: 1.6; /* Better line height for readability */
+        color:black; /* Consistent color for readability */
+    }
+    
+    #content-boxes {
+        margin: 10px auto; /* Add space around the content box */
+        margin-top: 10px; /* Ensure it starts below the h2 */
+        max-width: 800px; /* Limit the width for readability */
+        text-align: left; /* Align text to the left */
+        font-family: Arial, sans-serif; /* Use a clean font */
+        color: #333; /* Darker text color for better contrast */
+        line-height: 1.6; /* Add spacing between lines */
+        padding: 10px; /* Add padding inside the box */
+        overflow: hidden; /* Ensure no content spills out */
+        clear: both; /* Ensure it clears floated elements */
+    }
+    
+    #content-boxes p {
+        margin: 10px 0; /* Ensure proper space between paragraphs */
+    }
+    
+    
+    
+    /* Footer Styles */
+#footer {
+    background-color: #01228b; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+    flex-wrap: wrap; /* Makes footer responsive */
+}
+
+/* Footer Columns */
+.footer-left,
+.footer-right {
+    flex: 1; /* Each column takes equal space */
+    margin: 10px;
+}
+
+/* Section Titles */
+.footer-left h3,
+.footer-right h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 5px;
+    border-top: 1px solid #444; /* Line separating footer sections */
+    padding-top: 5px;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes icons white for dark background */
+}
+
+
+
+

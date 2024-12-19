@@ -1,0 +1,168 @@
+#headerdiv {
+    background-image: url("header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between Travel and Explore */
+    padding: 0 20px; /* Add padding around the edges */
+}
+
+#index{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+#explore {
+    text-decoration: none;
+    
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 90px;
+}
+#register{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 250px;
+}
+
+#index:hover,
+#explore:hover,#register:hover {
+    color: rgb(250, 234, 50); /* Add hover effect */
+}
+
+nav {
+    display: flex; /* Use Flexbox for items inside the nav */
+    justify-content: space-between; /* Distribute Travel and Explore */
+    width: 100%; /* Make the nav take up the full width */
+}
+
+nav h1 {
+    margin: 0; /* Remove default margins for h1 */
+}
+
+nav h1:first-child {
+    margin-right: auto; /* Push "Explore" to the far right */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.registration-container {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-container h1 {
+    font-size: 32px;
+    color: #3a3ab7;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 100%;
+}
+
+#register-btn {
+    background-color: #27A9E3;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#register-btn:hover {
+    background-color: #2188A8;
+}
+
+footer {
+    background-color: #01228b;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 5px;
+    border-top: 1px solid #444;
+    padding-top: 5px;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Tourism in India</title>
+  <link rel="stylesheet" href="t1.css">
+</head>
+<body>
+
+  <header>
+    <div id="headerdiv">
+    <nav>
+       <h1 ><a href="index.html" id="index">Travel</a></h1>
+       <h1 ><a href="t1.html" id="explore">Explore</a></h1>
+       <h1><a href="register.html" id="register">Register</a></h1>
+    </nav>
+</div>
+</header>
+
+  <div class="gallery">
+    <div class="image-section" id="image1" onclick="openModal(1)">
+      <img src="agra.jpeg" alt="Taj Mahal - Agra">
+      <div class="description">Taj Mahal - Agra</div>
+    </div>
+    <div class="image-section" id="image2" onclick="openModal(2)">
+      <img src="jaipur.jeg.jpeg" alt="Jaipur City - Rajasthan">
+      <div class="description">Jaipur City - Rajasthan</div>
+    </div>
+    <div class="image-section" id="image3" onclick="openModal(3)">
+      <img src="houseboat-kerala-backwaters-india-scaled.jpg" alt="Backwaters of Kerala">
+      <div class="description">Backwaters of Kerala</div>
+    </div>
+    <div class="image-section" id="image4" onclick="openModal(4)">
+      <img src="varanasi.jpeg" alt="Varanasi Ganges">
+      <div class="description">Varanasi Ganges</div>
+    </div>
+    <div class="image-section" id="image5" onclick="openModal(5)">
+      <img src="kaziranga-national-park.jpg" alt="kaziranga national park">
+      <div class="description">kaziranga national park</div>
+    </div>
+    <div class="image-section" id="image6" onclick="openModal(6)">
+      <img src="goa.jpeg" alt="Goa Beaches">
+      <div class="description">Goa Beaches</div>
+    </div>
+    <div class="image-section" id="image7" onclick="openModal(7)">
+      <img src="himalaya.jpeg" alt="Himalayan Views">
+      <div class="description">Himalayan Views</div>
+    </div>
+    <div class="image-section" id="image8" onclick="openModal(8)">
+      <img src="Mysore_Palace.jpg" alt="Mysore Palace - Karnataka">
+      <div class="description">Mysore Palace - Karnataka</div>
+    </div>
+  </div>
+
+  <!-- Modal for displaying more details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Explore India Tourism</p>
+  </footer>
+
+  <script src="t1.js"></script>
+</body>
+</html>
